@@ -28,5 +28,6 @@ steps:
     script: |
       # Write your commands here
       
-      mvn clean install
+      #mvn clean install
+      mvn test
       mvn package deploy -DmuleDeploy

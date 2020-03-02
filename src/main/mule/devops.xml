@@ -8,7 +8,7 @@ http://www.mulesoft.org/schema/mule/ee/core http://www.mulesoft.org/schema/mule/
 	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="31ca1293-861b-417f-a870-f1c018dfe35b" basePath="/api">
 		<http:listener-connection host="0.0.0.0" port="8081" />
 	</http:listener-config>
-	<flow name="devopsFlow" doc:id="71443727-682f-4587-a693-2e662cf4eb9f" >
+	<flow name="devopsFlow1" doc:id="71443727-682f-4587-a693-2e662cf4eb9f" >
 		<http:listener doc:name="Listener" doc:id="7d41dcd4-fb76-4f60-b58d-d05b0205a05e" config-ref="HTTP_Listener_config" path="/devops"/>
 		<logger level="INFO" doc:name="Logger" doc:id="098b6fab-1312-42cd-9caa-3691e2ff4c60" message="#[payload]"/>
 		<ee:transform doc:name="Transform Message" doc:id="4faa8a69-a890-4868-b69c-c9121fb9bbdb" >
